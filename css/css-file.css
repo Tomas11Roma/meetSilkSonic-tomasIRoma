@@ -15,7 +15,7 @@
 
 html{
 	font-size: 62.5%;
-    background-color: #BF895A;
+    background-color: #df9c61;
     font-family: Sunflawer;
 }
 
@@ -130,7 +130,7 @@ a {
 }
 
 .header{
-    background-color: #BF895A;  
+    background-image: linear-gradient(#df9c61,#7a4133);  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,10 +140,10 @@ a {
 
 .meet{
     display: flex;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     align-items: center;
     margin: 10px;
-    color: #592A25;
+    color: #1a120f;
 }
 
 .header img{
@@ -175,7 +175,7 @@ padding: 10px;
 }
 
 .footer{
-    background-color: #592A25;
+    background-image: linear-gradient(#7a4133,#df9c61); 
     color: beige;
     grid-area: footer;
     display: flex;
