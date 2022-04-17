@@ -20,7 +20,7 @@ html{
 }
 
 a {
-    color: beige;
+    color: beige !important;
     text-decoration: none;
 }
 
