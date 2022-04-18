@@ -20,7 +20,7 @@ html{
 }
 
 a {
-    color: beige !important;
+    color: beige;
     text-decoration: none;
 }
 
@@ -221,6 +221,6 @@ padding: 10px;
 }
 
 .redes {
-    width: 25px;
-    height: 25px;
+    font-size: 150%;
+    padding: 10px;
 }
