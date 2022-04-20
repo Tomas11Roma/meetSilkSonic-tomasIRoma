@@ -1,0 +1,32 @@
+.header{
+    background-color: linear-gradient(#df9c61, #7a4133); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;   
+    font-weight: bold;
+    img{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+.meet{
+    display: flex;
+    font-size: 4.5rem;
+    align-items: center;
+    margin: 10px;
+    color: $negroTitulo;
+    -webkit-text-stroke: 0.2px ;
+}
+
+.navegacion{
+    display: block;
+    background-color: $marronNav;
+    font-size: 1.5rem;
+}
+
+.ul li{
+display: inline-block;
+padding: 10px;
+}

@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+@import "fuentes";
+@import "variables";
+@import "header";
+
+html{
+	font-size: 62.5%;
+    background-color: $crema;
+    font-family: Sunflawer;
+}
+
+a{
+    color: $beigeNavYFooter;
+    text-decoration: none;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  img{
+    max-width: 100%;
+    height: auto;
+}
+}
+
+.footer{
+    background-color: linear-gradient(#7a4133, #df9c61);
+    color: $beigeNavYFooter;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    font-style: oblique;
+}
+
+.redes {
+    font-size: 150%;
+    padding: 10px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-areas: "header header"
+    "main main"
+    "footer footer";
+}
+
+@media screen and (max-width:1024px){
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    .header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navegacion{
+        margin-bottom: 10px;
+    }
+
+    .main{
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:768px){
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    .header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .meet{
+        flex-direction: column;
+    }
+
+    .navegacion{
+        margin-bottom: 10px;
+    }
+
+    .main{
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:480px){
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    .header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .meet{
+    flex-direction: column;
+    }
+
+    .navegacion{
+        margin-bottom: 10px;
+    }
+
+    .main{
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
