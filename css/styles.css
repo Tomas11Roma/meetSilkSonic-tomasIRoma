@@ -11,6 +11,32 @@
   font-family: 'BlackDemo';
   src: url("../fonts/Boiling-BlackDemo.ttf"); }
 
+.btn--facebook {
+  background-color: #9a6537; }
+
+.btn--instagram {
+  background-color: #b07440; }
+
+.btn--github {
+  background-color: #7a502b; }
+
+.btn--youtube {
+  background-color: #634123; }
+
+.redes, .margenLadoIzq {
+  font-size: 120%;
+  padding: 12px;
+  margin: 5px; }
+
+.margenLadoIzq {
+  background-color: #be7d44; }
+
+.margenLadoDer {
+  font-size: 120%;
+  padding: 12px;
+  margin: 5px;
+  background-color: #372414; }
+
 .header {
   background-color: linear-gradient(#df9c61, #7a4133);
   display: flex;
@@ -68,10 +94,6 @@ a {
   font-size: 1.5rem;
   font-weight: lighter;
   font-style: oblique; }
-
-.redes {
-  font-size: 150%;
-  padding: 10px; }
 
 .contenedor {
   display: grid;

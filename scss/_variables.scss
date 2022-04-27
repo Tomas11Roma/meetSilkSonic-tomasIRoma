@@ -2,3 +2,44 @@ $marronNav: #592A25;
 $crema: #df9c61;
 $negroTitulo: #1a120f;
 $beigeNavYFooter: beige;
+
+$redes: (
+facebook: #9a6537,
+instagram:#b07440,
+github:#7a502b,
+youtube:#634123
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red} {
+     background-color: $color;
+    }
+}
+
+$estilosRedes: (
+    tFuente: 120%,
+    padding: 12px,
+    margin: 5px
+);
+
+.redes { 
+font-size: map-get($estilosRedes, tFuente);
+padding: map-get($estilosRedes, padding);
+margin: map-get($estilosRedes, margin);
+}
+
+.margenLadoIzq {
+    @extend .redes;
+   background-color: #be7d44;
+}
+
+@mixin sizes($fontsize, $padding, $margin, $color) {
+    font-size: $fontsize;
+    padding: $padding;
+    margin: $margin;
+    background-color: $color;
+}
+
+.margenLadoDer{
+    @include sizes(120%,12px,5px,#372414);
+}
